@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perasaan.css">
+    <title>For You</title>
+    <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju-2.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="Text1">
+        <header class="w3-container w3-container">
+            <p class="text2">Hi, I had a crush on u </p>
+        </header>
+    </div>
+
+    <div class="w3-container w3-text-grey" id="jeans">
+        <p class="jean2">Be Minee?</p>
+        <img src="pinguin.png" alt="">
+        <br>
+        <br>
+        <button class="btn12" onclick="MyCustomFunction()">Yes</button>
+
+        <script>
+            function MyCustomFunction(){
+                alert("kirim jawaban ke wa yaa");
+                location.assign("https://wa.me/?text=&20Aku&20Mau&20Jadi&20Pacar%Kamu><");
+            }
+        </script>
+
+        <button class="btn12" onmouseover="gak(this)">No</button>
+    </div>
+<script>
+    function gak(ini){
+        ini.style.position = "absolute";
+        ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+        ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+    }
+</script>
+<script src="perasaan.js"></script>
+</body>
+</html>
